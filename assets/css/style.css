@@ -273,6 +273,7 @@
 }
 
 .section5{
+    margin-top: 40px;
     background-color: #0E0E0E;
 }
 
@@ -509,7 +510,7 @@ input::placeholder{
     background-image: url(../images/blog-bg.png) !important;
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 100vh;
+    position: relative;
 }
 
 .blog-bg .our-blogs .our-blogs-halmet{
@@ -530,6 +531,114 @@ input::placeholder{
     font-size: 16px;
     color: #000;
     font-weight: normal;
+}
+
+.rugbyskillz-balls-about-us,
+.blog-bg .rugbyskillz-ball{
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+}
+
+.accordion.faq{
+    padding-top: 160px;
+}
+
+.faq-header.faq{
+    font-size: 25px ;
+}
+
+.accordion-item.faq{
+    border-bottom: 1px solid #75A70D;
+}
+
+.accordion-body.faq-body.faq{
+    max-width: 750px;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.accordion-item:last-of-type{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.rugbyskillz-balls-about-us,
+.rugbyskillz-ball.faq{
+    bottom: -100px;
+}
+
+
+.rugbyskillz-balls-about-us img{
+    width: 170px;
+    height: 170px;
+}
+.rugbyskillz-ball.faq img{
+    max-width: 100px;
+    height: 250px;
+}
+
+.blog-bg.faq{
+    margin-bottom: 100px;
+}
+
+.about-mission-section {
+    background-image: url(../images/about-mission-section.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 550px;
+    padding: 20px;
+}
+
+.about-mission-section .heading {
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.about-mission-section .about-position-absolute {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.about-mission-section .about-paragraph {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.about-mission-section.preposition{
+    background-image: url(../images/about-prepositon-section.png) !important;
+}
+
+.contact-us-heading{
+    color: #E57407;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 150px;
+}
+
+.card-75A70D{
+    border: 2px solid #75A70D;
+    border-radius: 13px;
+    width: 325px;
+    height: 295px;
+}
+
+.card-75A70D .contact-number{
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
 }
 @media screen and (max-width: 767px) {
     /* Top Bar */
@@ -585,6 +694,9 @@ input::placeholder{
         width: 100%;
     }
 
+    .section7{
+        padding-bottom: 40px;
+    }
     .section3-img1{
         margin: 20px 0px;
     }
@@ -633,5 +745,37 @@ input::placeholder{
 
     .footer-logo img{
         width: 50%;
+    }
+
+    .accordion.faq{
+        padding-top: 50px;
+    }
+
+    .about-mission-section {
+        background-size: cover;
+        min-height: 400px;
+    }
+    
+    .about-mission-section .heading {
+        font-size: 30px;
+    }
+
+    .about-mission-section .about-paragraph {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .about-mission-section {
+        min-height: 350px;
+    }
+
+    .about-mission-section .heading {
+        font-size: 24px;
+    }
+
+    .about-mission-section .about-paragraph {
+        font-size: 14px;
     }
 }
