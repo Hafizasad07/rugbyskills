@@ -147,9 +147,10 @@
     background-image: url(../images/home/section2-bg.png);
     background-repeat: no-repeat;
     background-size: 50% 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     align-items: center;
+    margin-top: 50px;
 }
 
 .section7 .img1 img,
@@ -157,6 +158,10 @@
 .section2-img1 img{
     width: 80%;
     max-width: 100%;
+}
+
+.section2-img1{
+    text-align: center;
 }
 
 .section2 .about-us span{
@@ -330,7 +335,7 @@
 .faq-question {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 10px 0;
   }
 
@@ -586,7 +591,7 @@ input::placeholder{
 .about-mission-section {
     background-image: url(../images/about-mission-section.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center;
     position: relative;
     display: flex;
@@ -626,21 +631,150 @@ input::placeholder{
     font-size: 40px;
     font-weight: bold;
     padding-top: 150px;
+    padding-bottom: 20px;
 }
 
 .card-75A70D{
     border: 2px solid #75A70D;
     border-radius: 13px;
-    width: 325px;
-    height: 295px;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.contact-us-para,
+.card-75A70D .contact-number a,
 .card-75A70D .contact-number{
     font-size: 18px;
     color: #000;
     font-weight: 500;
+    text-decoration: none;
 }
+
+.contact-us-para{
+    padding: 20px 0px;
+}
+
+.form-container {
+    background-color: #0C0C0C; 
+    padding: 80px 50px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.form-container .heading{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+.form-container input,
+.form-container textarea {
+    background-color: #0C0C0C;
+    color: #fff;
+    border-color: 1px solid #fff;
+    resize: none;
+}
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.form-container .btn:hover {
+    background-color: #45a049;
+}
+
+.form-container textarea::placeholder,
+.form-container input::placeholder{
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.form-container .btn-75A70D{
+    background-color: #75A70D;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.form-container .margin-top-40px{
+    margin-top: 40px;
+}
+
+.contact-us-img img{
+    height: 506px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+@media screen and (max-width: 992px) {
+
+    .section2-img1 img,
+    .section7 .img1 img,
+    .card-75A70D{
+        width: 100%;
+    }
+
+    .section2-img1{
+        text-align: left;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .section3 .section3-img1 img{
+        height: 100%;
+    }
+
+    .team-icon-flex{
+        flex-wrap: wrap;
+    }
+
+    .section4 .paragraph {
+        font-size: 14px;
+        margin: 0px 100px;
+    }
+
+    .section5 .text-E57407{
+        padding-top: 30px;
+    }
+
+    .section5-img1 img{
+        margin-bottom: -24px;
+        width: 100%;
+    }
+
+    .about-us,
+    .accordion,
+    .padding-top-20px{
+        padding-top: 20px !important;
+    }
+
+    .button-flex{
+        margin-bottom: 20px;
+    }
+
+    .navbar-nav{
+        gap: 10px;
+        align-items: start;
+    }
+    .navbar {
+        padding: 20px 10px;
+    }
+}
+
 @media screen and (max-width: 767px) {
+
+    .section5-img1 img{
+        margin-bottom: 0px;
+    }
+    
     /* Top Bar */
     .top-bar-flex {
         flex-direction: column;
@@ -650,7 +784,7 @@ input::placeholder{
 
     /* Navbar */
     .navbar {
-        padding: 10px;
+        padding: 20px 10px;
     }
 
     .navbar-brand img {
@@ -680,7 +814,7 @@ input::placeholder{
     }
 
     .nav-link:hover::after, .nav-link.active::after{
-        left: 12%;
+        left: 50%;
     }
 
     .team-icon-flex{
@@ -763,9 +897,51 @@ input::placeholder{
     .about-mission-section .about-paragraph {
         font-size: 18px;
     }
+
+    .card-75A70D .contact-us-icons img{
+        width: 50px;
+    }
+    .card-75A70D{
+        margin-bottom: 30px;
+    }
+
+    .form-container input{
+        margin-bottom: 20px;
+    }
+
+    .form-container{
+        padding: 50px;
+        margin-top: 30px;
+    }
+
+    .contact-us-heading{
+        padding-top: 100px;
+    }
+
+    .fd-cr{
+        flex-direction: column-reverse;
+    }
+
+    .contact-us-para{
+        padding-left: 10px;
+    }
+
+    .faq-header.faq{
+        font-size: 20px;
+    }
+
+    .accordion-body.faq-body.faq{
+        font-size: 18px;
+    }
 }
 
 
+@media (max-width: 662px) {
+    .accordion.faq{
+        max-width: 400px;
+        margin: auto;
+    }
+}
 @media (max-width: 480px) {
     .about-mission-section {
         min-height: 350px;
@@ -777,5 +953,10 @@ input::placeholder{
 
     .about-mission-section .about-paragraph {
         font-size: 14px;
+    }
+
+    .accordion.faq{
+        max-width: 300px;
+        margin: auto;
     }
 }
