@@ -776,6 +776,10 @@ input::placeholder{
 }
 @media screen and (max-width: 992px) {
 
+    .flex-icons{
+        padding-bottom: 30px;
+    }
+
     .section2-img1 img,
     .section7 .img1 img,
     .card-75A70D{
@@ -896,7 +900,8 @@ input::placeholder{
     }
 
     .section4 .paragraph{
-        padding: 0px 40px;
+        padding: 0px;
+        margin: 0px 30px;
     }
 
     .section5{
@@ -998,6 +1003,7 @@ input::placeholder{
         width: 10px;
         height: 10px;
     }
+
 }
 
 
