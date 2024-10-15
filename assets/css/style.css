@@ -430,10 +430,12 @@
     padding: 0px;
 }
 
+.footer-links ul li a,
 .footer-links ul li{
     padding-bottom: 10px;
     color: #fff;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .footer-links ul li a img{
