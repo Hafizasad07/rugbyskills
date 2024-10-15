@@ -165,7 +165,7 @@
 }
 
 .section2 .about-us span{
-    font-size: 20px;
+    font-size: 30px;
     color: #000;
 }
 
@@ -182,7 +182,7 @@
 }
 
 .section2 .about-us p{
-    font-size: 16px;
+    font-size: 18px;
     color: #000;
 }
 
@@ -204,7 +204,7 @@
 }
 
 .font-size-24px{
-    font-size: 20px;
+    font-size: 24px;
     color: #FDEEEE;
     font-weight: normal;
 }
@@ -283,7 +283,7 @@
 }
 
 .section5 .text-E57407{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
 }
 
@@ -292,7 +292,7 @@
 }
 
 .font-size-18px{
-    font-size: 16px;
+    font-size: 22px;
     color: #fff;
     line-height: normal;
 }
@@ -329,6 +329,12 @@
 
 .comma-section{
     margin-top: 65px;
+}
+
+.comma img{
+    width: 21px !important;
+    height: 13px !important;
+    display: inline-block !important;
 }
 
 /* faq */
@@ -714,6 +720,60 @@ input::placeholder{
 .navbar-toggler:focus{
     box-shadow: none;
 }
+
+.about-us{
+    padding-bottom: 50px;
+}
+
+.owl-dots {
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    text-align: center;
+    padding-top: 15px;
+    z-index: 100;
+    width: 100%;
+}
+.owl-dots button.owl-dot {
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+}
+.owl-dots button.owl-dot.active span{
+    background: #E57407!important;
+    position: relative;
+}
+.owl-dots button.owl-dot span {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 50%;
+
+}
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}
+.owl-carousel .owl-item img{
+    width: 86px !important;
+}
+@media screen and (min-width: 1400px) {
+    .section3 .section3-img1 img {
+        width: 100%;
+        max-width: 100%;
+        height: 545px;
+    }
+
+    
+    .section2 .about-us p{
+        font-size: 22px;
+        color: #000;
+    }
+
+}
 @media screen and (max-width: 992px) {
 
     .section2-img1 img,
@@ -932,6 +992,11 @@ input::placeholder{
 
     .accordion-body.faq-body.faq{
         font-size: 18px;
+    }
+
+    .owl-dots button.owl-dot span{
+        width: 10px;
+        height: 10px;
     }
 }
 
