@@ -169,6 +169,7 @@
     color: #000;
 }
 
+.rugbyskillz-balls-img,
 .about-us img{
     width: 37px;
 }
@@ -534,6 +535,10 @@ input::placeholder{
     padding-top: 80px;
 }
 
+.our-blogs-halmet img{
+    width: 53px;
+}
+
 .font-size-28px{
     font-size: 28px;
     color: #000;
@@ -607,6 +612,26 @@ input::placeholder{
     justify-content: center;
     min-height: 550px;
     padding: 20px;
+}
+
+.heading-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.toggle-plus {
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    display: none;
+    top: -8px;
 }
 
 .about-mission-section .heading {
@@ -762,6 +787,13 @@ input::placeholder{
 .owl-carousel .owl-item img{
     width: 86px !important;
 }
+
+.rugbyskillz-ball-flex{
+    display: flex;
+    align-items: center;
+}
+
+
 @media screen and (min-width: 1400px) {
     .section3 .section3-img1 img {
         width: 100%;
@@ -776,7 +808,18 @@ input::placeholder{
     }
 
 }
+
+@media screen and (min-width: 1900px) {
+    .section1-programs{
+        background-size: 100% !important;
+    }
+}
+
 @media screen and (max-width: 992px) {
+
+    .contact-btn{
+        margin-top: 20px;
+    }
 
     .flex-icons{
         padding-bottom: 30px;
@@ -869,6 +912,7 @@ input::placeholder{
     .section1 {
         background-size: cover;
         background-position: top center; 
+        z-index: 1;
     }
 
     .navbar-nav{
@@ -885,6 +929,7 @@ input::placeholder{
 
     .team-icon-flex{
         flex-wrap: wrap;
+        gap: 0px;
     }
 
     .section7 .img1 img, 
@@ -953,8 +998,9 @@ input::placeholder{
     }
 
     .about-mission-section {
-        background-size: cover;
-        min-height: 400px;
+        min-height: 0px !important;
+        background-size: inherit !important;
+        margin-bottom: 30px;
     }
     
     .about-mission-section .heading {
@@ -963,6 +1009,11 @@ input::placeholder{
 
     .about-mission-section .about-paragraph {
         font-size: 18px;
+        display: none;
+    }
+
+    .about-paragraph.expanded {
+        display: block;
     }
 
     .card-75A70D .contact-us-icons img{
@@ -1006,6 +1057,35 @@ input::placeholder{
         height: 10px;
     }
 
+    .section1-bg-leftimg{
+        z-index: -1;
+    }
+
+    .section2{
+        background-image: none;
+    }
+
+    .font-size-24px{
+        font-size: 22px;
+    }
+
+    .toggle-plus{
+        display: block;
+    }
+        
+    .about-mission-section.preposition{
+        background-image: none !important;
+        display: block !important;
+        background-color: #64a823 !important;
+        border-radius: 20px;
+    }
+
+    .about-mission-section{
+        background-image: none !important;
+        display: block !important;
+        background-color: #E57407 !important;
+        border-radius: 20px;
+    }
 }
 
 

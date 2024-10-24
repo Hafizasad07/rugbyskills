@@ -80,3 +80,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 $( ".carousel3 .owl-prev").html('<i class="fa fa-play"></i>');
 $( ".carousel3 .owl-next").html('<i class="fa fa-play"></i>');
+
+document.querySelectorAll('.toggle-plus').forEach(button => {
+  button.addEventListener('click', function() {
+      const target = document.querySelector(this.getAttribute('data-target'));
+      
+      // Toggle the 'expanded' class to show/hide the paragraph
+      target.classList.toggle('expanded');
+      
+      // Change the button text between '+' and '-' based on visibility
+      if (target.classList.contains('expanded')) {
+          this.textContent = '-';
+      } else {
+          this.textContent = '+';
+      }
+  });
+});
