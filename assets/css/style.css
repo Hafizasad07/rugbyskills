@@ -1113,6 +1113,10 @@ input::placeholder{
         margin: auto;
     }
 
+    .heading-row{
+        gap: 30px;
+    }
+    
     .toggle-plus{
         top: -12px;
     }
