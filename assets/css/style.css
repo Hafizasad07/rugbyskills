@@ -930,6 +930,7 @@ input::placeholder{
     .team-icon-flex{
         flex-wrap: wrap;
         gap: 0px;
+        flex-direction: column;
     }
 
     .section7 .img1 img, 
