@@ -1101,7 +1101,7 @@ input::placeholder{
     }
 
     .about-mission-section .heading {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .about-mission-section .about-paragraph {
@@ -1111,5 +1111,9 @@ input::placeholder{
     .accordion.faq{
         max-width: 300px;
         margin: auto;
+    }
+
+    .toggle-plus{
+        top: -12px;
     }
 }
