@@ -165,7 +165,7 @@
 }
 
 .section2 .about-us span{
-    font-size: 30px;
+    font-size: 20px;
     color: #000;
 }
 
@@ -183,7 +183,7 @@
 }
 
 .section2 .about-us p{
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
 }
 
@@ -815,6 +815,16 @@ input::placeholder{
     }
 }
 
+@media screen and (max-width: 1192px) {
+    .section2-img1 img{
+        width: 100%;
+    }
+
+    .section2 .about-us span,
+    .section2 .about-us p{
+        font-size: 18px;
+    }
+}
 @media screen and (max-width: 992px) {
 
     .contact-btn{
@@ -1087,6 +1097,10 @@ input::placeholder{
         background-color: #E57407 !important;
         border-radius: 20px;
     }
+
+    .section3.program-card-bg{
+        background: none;
+    }
 }
 
 
@@ -1096,7 +1110,8 @@ input::placeholder{
         margin: auto;
     }
 }
-@media (max-width: 480px) {
+
+@media (max-width: 500px) {
     .about-mission-section {
         min-height: 350px;
     }
@@ -1120,5 +1135,10 @@ input::placeholder{
     
     .toggle-plus{
         top: -12px;
+    }
+
+    .email-info,
+    .welcome-message {
+        display: none;
     }
 }
